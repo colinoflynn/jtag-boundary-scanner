@@ -4,7 +4,9 @@ This is a Python interface for JTAG Boundary Scanner. This calls the DLL using C
 
 ## Notes
 
-* The DLL included in this repo is built for Windows, and is a 32-bit DLL. Thus you will *need to use 32-bit Python*.
+* The libjtagcore DLL included in this repo is built for Windows, and is a 32-bit DLL. Thus you will *need to use 32-bit Python*.
+* The dll has fixes from the "dll-build" branch in my repo right now.
+* Copy the `JLinkArm.dll` into this folder as well for communicating with the J-Link device. Use a matching copy of the DLL from when you installed your J-Link package on your computer (don't copy a random DLL from the internet - it might be outdated and you'll get wierd errors if the DLL doesn't know about your version of the J-Link firmware).
 
 
 ## Example
