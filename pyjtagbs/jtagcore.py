@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
         jtag.set_scan_mode(1, "active")
         
-        jtag.pin_set_state(1, "PA11", "High") #Set pin high (active out)
+        jtag.pin_set_state(1, "PA11", True) #Set pin high (active out)
         jtag.pin_set_state(1, "PA11", "high") #Set pin low (active out)
         jtag.pin_set_state(1, "PA11", False) #Set pin low (active out)
         jtag.pin_set_state(1, "PA11", "low") #Set pin low (active out)
