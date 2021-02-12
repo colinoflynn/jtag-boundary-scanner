@@ -45,9 +45,9 @@ const drv_entry staticdrvs[] =
 {
 #ifdef WIN32
 	{(DRV_GETMODULEINFOS)drv_FTDI_libGetDrv,0},
-	{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,0},
-	{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,1},
-	{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,2},
+	//{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,0},
+	//{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,1},
+	//{(DRV_GETMODULEINFOS)drv_LPT_libGetDrv,2},
 #endif
 #if defined(__linux__) || defined(WIN32)
 	{(DRV_GETMODULEINFOS)drv_JLINK_libGetDrv,0},
